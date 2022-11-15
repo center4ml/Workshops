@@ -46,5 +46,5 @@ def classifier (X, threshold):
     #BEGIN_SOLUTION
     return X > threshold
     #END_SOLUTION
-p	
+pass	
 ```
