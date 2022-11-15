@@ -30,7 +30,9 @@ def classifier (X, threshold):
 ### Intruction:
 ```
 cd Workshops/Day1
+cp  0_introduction_to_tools.ipynb ~/
 git checkout 2022_2
+mv ~/ 0_introduction_to_tools.ipynb ./
 ./scripts/makeStudentsVersion.py 0_introduction_to_tools.ipynb
 git commit -a
 git push
@@ -44,5 +46,5 @@ def classifier (X, threshold):
     #BEGIN_SOLUTION
     return X > threshold
     #END_SOLUTION
-pass	
+p	
 ```
