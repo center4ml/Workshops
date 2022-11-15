@@ -13,11 +13,7 @@ if nInputParams<2:
 else:
     input_file_name = sys.argv[1]
     
-    
-    
-
-print("Modyfying file:","blue", input_file_name)
-exit(0)
+print("Modyfying file:", input_file_name)
 output_file = open("tmp.ipynb", "w")
 result = subprocess.run(["awk", " /#BEGIN_SOLUTION/{p=1}/#END_SOLUTION/{p=0;print \"    \\\"...\\\\n\\\", \";next}!p", input_file_name],
                         text=True, stdout=output_file)
