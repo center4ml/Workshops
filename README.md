@@ -37,4 +37,12 @@ git push
 git checkout 2022_2_solutions
 ```
 
-**Notice**: The ```#END_SOLUTION``` can not be a in the last cell line. In suach a case pleaee put ```pass`` afte the closing tag.
+**Notice**: The ```#END_SOLUTION``` can not be a in the last cell line. In such a case please put `pass` after the closing tag:
+
+``` python
+def classifier (X, threshold):
+    #BEGIN_SOLUTION
+    return X > threshold
+    #END_SOLUTION
+pass	
+```
