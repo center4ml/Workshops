@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/center4ml/Workshops/blob/2022_2_solutions/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/center4ml/Workshops/blob/2023_1_solutions/)
 
 
 # Workshops
@@ -27,16 +27,10 @@ def classifier (X, threshold):
     ...
 ```
 
-### Intruction:
+### Instruction:
 ```
-cd Workshops/Day1
-cp  0_introduction_to_tools.ipynb ~/
-git checkout 2022_2
-mv ~/ 0_introduction_to_tools.ipynb ./
-./scripts/makeStudentsVersion.py 0_introduction_to_tools.ipynb
-git commit -a
-git push
-git checkout 2022_2_solutions
+./scripts/makeStudentsVersion.py 
+git push origin 2023_1
 ```
 
 **Notice**: The ```#END_SOLUTION``` can not be a in the last cell line. In such a case please put `pass` after the closing tag:
