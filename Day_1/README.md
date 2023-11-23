@@ -2,8 +2,6 @@
 
 Jupyter Notebook dedicated for Machine Learning workshop for Center4ML in University of Warsaw.
 
-**I've rewritten portions of this material in autumn of 2023 for the Statistics Seminar in MIM UW.**
-
 ## Agenda
 
 The workshop notebooks cover the following topics:
