@@ -9,7 +9,7 @@ Jupyter Notebook dedicated for Machine Learning workshop for Center4ML in Univer
 The workshop notebooks cover the following topics:
 
 - Introduction to tensors in PyTorch
-- Automatic gradient functionality
+- Automatic gradient functionality - computational graph
 - Introduction to loss functions
 - Classification neural network example
 - Regression neural network example
