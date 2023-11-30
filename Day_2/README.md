@@ -4,13 +4,13 @@ Jupyter Notebook dedicated for Machine Learning workshop for Center4ML in Univer
 
 ## Agenda
 
-Short lecture
+Short lectures
+
 Hosted with https://raw.githack.com/
 
-Lecture 1
 
 <!-- Use this URL for development -->
-[Lecture 1 - Introduction to Physics-Informed Neural Networks (PINNs)](https://raw.githack.com/center4ml/Workshops/blob/2023_2/lectures/pages/pinn.html)
+[Lecture 1 - Introduction to Physics-Informed Neural Networks (PINNs)](https://raw.githack.com/center4ml/Workshops/2023_2/lectures/pages/pinn.html#1)
 
 <!-- Use this URL in production
 [Lecture 1](https://rawcdn.githack.com/ggruszczynski/gpu_colab/c63333b560d9a39271d629a4853d818d10af8be2/lectures/gpu_lecture1.html#1) -->
