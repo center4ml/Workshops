@@ -1,6 +1,6 @@
-# Day 2: *Introduction to Physics-Informed Neural Networks (PINNs)*
+# Day 3: *Introduction to Neural Operators (NO)*
 
-Jupyter Notebook dedicated for Machine Learning workshop for Center4ML in University of Warsaw.
+Jupyter Notebooks dedicated for Machine Learning workshop for Center4ML in University of Warsaw.
 
 ## Agenda
 
