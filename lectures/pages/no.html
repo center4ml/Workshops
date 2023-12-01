@@ -63,6 +63,12 @@ a {text-decoration: none; color: #666666;text-align:center; width: 24%}
 a:visited {color:#666666}
 a:hover {color:#33AA99}
 a:active, a#active {color:#FF9700;}
+
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
  </style>
   </head>
   <body>
@@ -216,12 +222,18 @@ But how?
 ---
 class: left, .toc[[&#10023;](../index.html)]
 # DeepONet - training
-  
-<img style="width:100%"  src="../figures/DeepONet_training_data.png">
+<div align='center'>
+<img style="width:50%"  class="centerImage" src="../figures/DeepONet_training_data_v0.png">
+</div>
+--
+
+
+<img style="width:100%"  src="../figures/DeepONet_training_data_v1.png">
 
 <br>
-[Link to source.](https://www.nature.com/articles/s42256-021-00302-5)
-
+Img 
+[source1](https://www.nature.com/articles/s42256-021-00302-5),
+[source2](https://arxiv.org/pdf/2103.10974.pdf).
 
 
 ---
@@ -229,9 +241,9 @@ class: left, .toc[[&#10023;](../index.html)]
 #  DeepONet
 
 Straighforward implementation
-
+<div align='center'>
 <img style="width:100%"  src="../figures/DeepONet_straightforward_architecture.png">
-
+</div>
 `$ G(u)(y) $`: is a function of `$ y $` conditioned on `$ u $`.
 
 Components:
@@ -242,31 +254,25 @@ Components:
 <br>
 [Link to source.](https://www.nature.com/articles/s42256-021-00302-5)
 
+<!-- 
 
----
-class: left, .toc[[&#10023;](../index.html)]
-#  DeepONet
 
 Advanced implementation - when the dimension of `$y$` no longer matches `$u(x_i)$`.
 
 <img style="width:90%"  src="../figures/DeepONet_advanced_architecture.png">
 
---
+
 
 `An unstactek DeepONet can ve viewwed as stacked one with all the branch nets sharing the same set of parameters.`
 
---
+
 
 `$ G(u)(y) \approx \sum_{k=1}^p  \underbrace{b_k \big( u(x_1), u(x_2), ..., u(x_m) \big)}_{ branch} \underbrace{t_k}_{trunk} $`
 
 
 <br>
 [Link to source.](https://www.nature.com/articles/s42256-021-00302-5)
-
-
-
-
-<!-- The are two methods. -->
+ -->
 
 
 ---
@@ -668,6 +674,27 @@ where:
 - solver = pseudospectral method
 
 [Source.](https://arxiv.org/abs/2111.03794v1)
+
+---
+class: left, .toc[[&#10023;](../index.html)]
+# Future outlook
+
+Are NO going to beat numerical Computational Fluid Dynamics (CFD) solvers?
+<div align='center'>
+<img style="width:50%" src="../figures/graphcast_weather_prediction.png">
+</div>
+
+Google claims:
+
+```
+GraphCast predicts weather conditions up to 10 days in advance 
+more accurately and much faster than the industry gold-standard 
+weather simulation system - the High Resolution Forecast (HRES), 
+produced by the European Centre for Medium-Range Weather Forecasts (ECMWF).
+```
+<br>
+[Source](https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/).
+
 
 ---
 class: left, .toc[[&#10023;](../index.html)]
