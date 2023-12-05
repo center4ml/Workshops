@@ -22,7 +22,10 @@ Lectures:
 
 The workshop notebooks cover the following topics:
 
-...
+- [Fourier Neural Operator – introduction](https://github.com/center4ml/Workshops/blob/2023_2/Day_3/10_understanding%20FNO%20basic%20components.ipynb)
+- [Understanding a Fourier layer](https://github.com/center4ml/Workshops/blob/2023_2/Day_3/10_understanding%20FNO%20basic%20components.ipynb)
+- [Training a Fourier Neural Operator](https://github.com/center4ml/Workshops/blob/2023_2/Day_3/20_training_FNO.ipynb)
+- [Fighting for super-resolution](https://github.com/center4ml/Workshops/blob/2023_2/Day_3/30_fighting_for_super-resolution.ipynb)
 
 ## Requirements
 
