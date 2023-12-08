@@ -191,8 +191,10 @@ Here, the 'operator' is the solution of diffusion equation at $t = T_{end}$
 ---
 class: left, .toc[[&#10023;](../index.html)]
 # What do we mean by 'Operator'?
-  
-May get more interesting, once the 'operator' becomes a more challenging PDE...
+
+We do not need to know the 'operator' explicitly.
+It can be trained.
+
 
 <img style="width:75%"  src="../figures/NO_1.png">
 
@@ -240,7 +242,7 @@ Img
 class: left, .toc[[&#10023;](../index.html)]
 #  DeepONet
 
-Straighforward implementation
+Basic implementation
 <div align='center'>
 <img style="width:100%"  src="../figures/DeepONet_straightforward_architecture.png">
 </div>
@@ -251,28 +253,33 @@ Components:
 - `$y$` --- *trunk* ---  query points, `$ y $`.
 - `$ G(u)(y) $`  --- *DeepONet's output* --- solution at the query point
 
+
 <br>
 [Link to source.](https://www.nature.com/articles/s42256-021-00302-5)
 
-<!-- 
 
+
+---
+class: left, .toc[[&#10023;](../index.html)]
+#  DeepONet
 
 Advanced implementation - when the dimension of `$y$` no longer matches `$u(x_i)$`.
 
-<img style="width:90%"  src="../figures/DeepONet_advanced_architecture.png">
+<img style="width:50%"  src="../figures/DeepONet_unstacked.png">
 
 
 
-`An unstactek DeepONet can ve viewwed as stacked one with all the branch nets sharing the same set of parameters.`
 
 
 
-`$ G(u)(y) \approx \sum_{k=1}^p  \underbrace{b_k \big( u(x_1), u(x_2), ..., u(x_m) \big)}_{ branch} \underbrace{t_k}_{trunk} $`
+`$ G(u)(y) \approx \sum_{k=1}^p  \underbrace{b_k \big( u(x_1), u(x_2), ..., u(x_m) \big)}_{ branch} \underbrace{t_k(y)}_{trunk} $`
 
 
-<br>
-[Link to source.](https://www.nature.com/articles/s42256-021-00302-5)
- -->
+
+[Source.](https://www.nature.com/articles/s42256-021-00302-5)
+
+
+<!-- `An unstactek DeepONet can ve viewwed as stacked one with all the branch nets sharing the same set of parameters.` -->
 
 
 ---
@@ -535,17 +542,27 @@ class: left, .toc[[&#10023;](../index.html)]
 #  Remark on Fourier space
 
 Some physical phenomena are known to be dependent on the frequency of the signal.
+The Fourier space may be a native space to describe them.
 
-Therefore, it seems to be good idea to act in the Fourier space
+Consider the advection-diffusion equation:
 
-For example:
+`\begin{eqnarray}
+\frac{\partial u}{\partial t} + \beta \frac{\partial u}{\partial x} &=& \lambda \frac{\partial ^2 u}{\partial x^2} \\
+u(x,0) &=& h(x)
+\end{eqnarray}`
 
-- advection (all modes shall travel with the same speed).
-- diffusion (high frequency modes decays faster).
 
---
+The analytical solution:
 
-<img style="width:60%"  src="../figures/wiggles.png">
+$$ u_{analytical}(x,t) = \mathcal{F}^{-1}\bigg(\mathcal{F}\big(h(x)\big) e^{-i \beta k t } e^{k^2 \nu t }\bigg) $$
+<!-- $$ \frac{\partial u}{\partial t} - \lambda \frac{\partial ^2 u}{\partial x^2} =0 $$ -->
+
+Observe that:
+- advection --> all modes shall travel with the same speed $ \beta $).
+- diffusion --> high frequency modes decay faster).
+
+<!-- 
+<img style="width:60%"  src="../figures/wiggles.png"> -->
 
 
 ---
