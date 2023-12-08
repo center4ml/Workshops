@@ -22,7 +22,7 @@ The workshop notebooks cover the following topics:
 - [Automatic gradient functionality revisited - (Day2)](https://github.com/center4ml/Workshops/blob/2023_2/Day_2/10_computational_graph_part2.ipynb)
 - [PINN ODE - forward problem - (Day2)](https://github.com/center4ml/Workshops/blob/2023_2/Day_2/20_PINN-ODE-forward_problem.ipynb)
 - [PINN ODE - inverse problem - (Day2)](https://github.com/center4ml/Workshops/blob/2023_2/Day_2/30_PINN-ODE-inverse_problem.ipynb)
-
+- [PINN PDE - inverse problem - (Day2)](https://github.com/center4ml/Workshops/blob/2023_2/Day_2/40_PINN-PDE-inverse_problem.ipynb)
 
 
 ## Requirements
