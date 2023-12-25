@@ -11,7 +11,7 @@ Hosted with https://raw.githack.com/
 Lectures:
 
 <!-- Use this URL for development -->
-[Lecture 1 - Introduction to Physics-Informed Neural Networks (PINNs)](https://raw.githack.com/center4ml/Workshops/blob/2023_2/lectures/pages/pinn.html)
+[Lecture 1 - Introduction to Physics-Informed Neural Networks (PINNs)](https://raw.githack.com/center4ml/Workshops/2023_2/lectures/pages/pinn.html)
 
 [Lecture 2 - Introduction to Neural Operators (NO)](https://raw.githack.com/center4ml/Workshops/2023_2/lectures/pages/no.html)
 
